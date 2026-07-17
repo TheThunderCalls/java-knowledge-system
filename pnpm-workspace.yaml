@@ -1,2 +1,10 @@
+packages:
+  - "docs"
+
 allowBuilds:
   esbuild: true
+  sass-embedded: true
+  "@parcel/watcher": true
+
+# exFAT 磁盘必须用的 hoisted 模式（v11 仍支持，但必须写在这）
+nodeLinker: hoisted
