@@ -1,0 +1,51 @@
+name: Deploy VuePress to GitHub Pages
+
+# 触发条件：推送到 main 分支，或手动在 Actions 页面点击 Run
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# 赋予 GITHUB_TOKEN 写权限（部署到 gh-pages 分支必须）
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出源码（fetch-depth: 0 用于 VuePress 获取 git 更新时间）
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. 安装 pnpm（指定版本，避免环境差异）
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      # 3. 设置 Node.js 并开启 pnpm 缓存
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: pnpm
+
+      # 4. 安装依赖（严格按 lockfile 安装，保证一致性）
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # 5. 构建 VuePress 站点（对应 package.json 里的 docs:build）
+      - name: Build VuePress site
+        run: pnpm docs:build
+
+      # 6. 部署到 gh-pages 分支
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/.vuepress/dist
+          commit_message: "Deploy: {{ github.sha }}"
