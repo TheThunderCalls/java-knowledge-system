@@ -1,5 +1,5 @@
 export default {
-  text: 'Web',
+  text: 'Web 开发',
 //   link: '/java/',
   prefix: '/web/',
   children: [

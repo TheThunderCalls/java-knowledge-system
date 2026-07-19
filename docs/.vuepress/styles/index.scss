@@ -1,0 +1,4 @@
+/* 侧边栏二级菜单的缩进 */
+.vp-sidebar-item:not(.vp-sidebar-heading) + .vp-sidebar-children {
+  padding-left: 2rem
+}
