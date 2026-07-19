@@ -4,6 +4,5 @@ export default {
   prefix: '/web/',
   children: [
     'springboot/',
-    
   ],
 }

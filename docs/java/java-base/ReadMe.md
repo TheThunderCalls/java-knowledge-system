@@ -1,5 +1,5 @@
 ---
-title: Java 基础
+title: 知识点
 ---
 # Java 基础
 

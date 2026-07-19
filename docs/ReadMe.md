@@ -5,7 +5,7 @@ heroText: Java 知识体系
 tagline: 从 Java 基础到分布式的系统化学习笔记
 actions:
   - text: 开始阅读 →
-    link: /java/java-base/syntax/data-type
+    link: /java/java-base/
     type: primary
 features:
 - title: 基础扎实

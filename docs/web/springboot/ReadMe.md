@@ -1,5 +1,5 @@
 ---
-title: SpringBoot 框架
+title: 知识点
 ---
 # SpringBoot 框架
 
