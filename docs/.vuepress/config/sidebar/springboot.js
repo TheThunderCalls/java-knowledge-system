@@ -1,14 +1,35 @@
 export default [
   {
     collapsible: false, //不可折叠
-    prefix: '/web/springboot/',
+    prefix: '/spring/springboot/',
     children: [
-        '/web/springboot/',
+        '/spring/springboot/',
         {
-            text: 'API接口', 
+            text: '基础入门',
+            collapsible: true,
+            children:[
+                
+            ]
+        },
+        {
+            text: 'Web 开发', 
             collapsible: true, //可折叠
             children: [
-                'springmvc/request-response.md',
+                'web/request-param-binding.md',
+            ]
+        },
+        {
+            text: '数据访问', 
+            collapsible: true, //可折叠
+            children: [
+                
+            ]
+        },
+        {
+            text: '原理', 
+            collapsible: true, //可折叠
+            children: [
+                
             ]
         },
     ],
