@@ -11,6 +11,12 @@ export default defineUserConfig({
   description: 'Java 学习笔记',
   bundler: viteBundler(),
   theme: defaultTheme({
+    // 关闭“最后更新时间”
+    lastUpdated: false,
+
+    // 关闭“贡献者列表（创建人等）”
+    contributors: false,
+    
     sidebarDepth: 0,
     navbar: navbarConfig,
     sidebar: sidebarConfig,
