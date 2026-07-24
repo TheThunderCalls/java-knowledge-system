@@ -16,6 +16,7 @@ export default [
             collapsible: true, //可折叠
             children: [
                 'web/request-param-binding.md',
+                'web/response-Interface.md',
             ]
         },
         {
