@@ -10,6 +10,7 @@ import javaJvm from './java-jvm.js'
 import javaConcurrency from './java-concurrency.js'
 import javaNewFeatures from './java-new-features.js'
 import javaCollections from './java-collections.js'
+import toolsIde from './tools-ide.js'
 
 const sidebar = {
   '/java/java-base/': javaBase,
@@ -23,6 +24,7 @@ const sidebar = {
   '/web/file-upload/':fileUpload,
   '/web/tomcat/':tomcat,
   '/web/jdbc/':jdbc,
+  '/tools/ide/':toolsIde,
   
 }
 
