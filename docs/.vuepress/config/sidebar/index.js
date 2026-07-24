@@ -11,6 +11,7 @@ import javaConcurrency from './java-concurrency.js'
 import javaNewFeatures from './java-new-features.js'
 import javaCollections from './java-collections.js'
 import toolsIde from './tools-ide.js'
+import rocketmq from './rocketmq.js'
 
 const sidebar = {
   '/java/java-base/': javaBase,
@@ -25,7 +26,7 @@ const sidebar = {
   '/web/tomcat/':tomcat,
   '/web/jdbc/':jdbc,
   '/tools/ide/':toolsIde,
-  
+  '/middleware/rocketmq/':rocketmq,
 }
 
 export default sidebar
