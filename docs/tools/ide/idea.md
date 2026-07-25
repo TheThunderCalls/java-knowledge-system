@@ -19,7 +19,13 @@ title: IDEA
 
 > 方案一： 首次在pom文件中添加依赖时，IDEA右下角会弹框提示是否开启自动导入，点击开启即可
 >
-> 方案二： 手动设置，File → Settings → Importing → Import Maven projects automatically → OK
+> 方案二： 手动设置，File → Settings → Build, Execution, Deployment → Build Tools → Sync project after changes in the build scripts → 勾选Any changes → OK
+>
+> 方案三： 全局手动设置，File → New Projects Setup → Settings for New Projects → Build, Execution, Deployment → Build Tools → Sync project after changes in the build scripts → 勾选Any changes → OK
+
+
+
+
 
 
 

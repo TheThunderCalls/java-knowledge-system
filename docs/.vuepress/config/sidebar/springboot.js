@@ -17,6 +17,7 @@ export default [
             children: [
                 'web/request-param-binding.md',
                 'web/response-Interface.md',
+                'web/unified-response.md',
             ]
         },
         {
