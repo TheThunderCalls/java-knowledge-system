@@ -5,8 +5,11 @@ title: 参数校验
 
 ::: important 说明
 参数校验是 **“防御性编程的第一道防线”**。
+
 很多项目把校验逻辑写在 Controller 或 Service 中，导致代码臃肿、复用性差、规则分散。
+
 Spring Boot 参数校验基于 Jakarta Validation 规范，通过 `@Validated` 触发校验，校验失败抛出 `MethodArgumentNotValidException`，配合全局异常处理器可实现统一返回；分组校验解决多场景复用问题，自定义校验器用于处理复杂业务规则，是构建企业级 API 的必备能力。
+
 本文以 **Spring Boot 3.x + Jakarta Validation** 为基础，系统性讲解 **参数校验的标准姿势、全局异常处理、自定义校验器以及常见坑点**。
 :::
 

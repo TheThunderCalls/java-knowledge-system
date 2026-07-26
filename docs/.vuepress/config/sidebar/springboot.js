@@ -18,6 +18,7 @@ export default [
                 'web/request-param-binding.md',
                 'web/response-Interface.md',
                 'web/unified-response.md',
+                'web/validation-with-custom-validator.md'
             ]
         },
         {
