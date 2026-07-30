@@ -5,7 +5,7 @@ export default [
     prefix: '/web/servlet/',
     children: [
         '/web/servlet/',
-        
+        'chinese-encoding-troubleshooting',
     ],
   },
 ]
