@@ -13,6 +13,7 @@ import javaNewFeatures from './java-new-features.js'
 import javaCollections from './java-collections.js'
 import toolsIde from './tools-ide.js'
 import rocketmq from './rocketmq.js'
+import databaseMysql from './database-mysql.js'
 
 const sidebar = {
   '/java/java-base/': javaBase,
@@ -29,6 +30,7 @@ const sidebar = {
   '/web/http/':webHttp,
   '/tools/ide/':toolsIde,
   '/middleware/rocketmq/':rocketmq,
+  '/database/mysql/':databaseMysql,
 }
 
 export default sidebar

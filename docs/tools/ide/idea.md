@@ -10,6 +10,7 @@ title: IDEA
 | 快捷键   | 作用               |
 | -------- | ------------------ |
 | Ctrl + H | 查看当前类的继承类 |
+| Alt + Insert | 生成getter/setter方法,构造器等 |
 
 
 
